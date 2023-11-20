@@ -60,12 +60,12 @@ URL
 
 ## resipes テーブル
 
-| Columu                       | Type       | Options        |
-|------------------------------|------------|----------------|
-| title                        | string     | null: false    |
-| explanation                  | text       | null: false    |
-| procedure                    | text       | null: false    |
-
+| Columu                       | Type        | Options                          |
+|------------------------------|-------------|----------------------------------|
+| title                        | string      | null: false                      |
+| explanation                  | text        | null: false                      |
+| procedure                    | text        | null: false                      |
+| user                         | references  |  null: false, foreign_key: true  |
 
 ### Association
 - belongs_to :user
